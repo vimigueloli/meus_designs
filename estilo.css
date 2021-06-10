@@ -6,22 +6,24 @@
 body {
     font-family: "Open Sans", sans-serif;
 }
-    ul, ol, li {
+
+ul, ol, li {
         list-style: none;
-    }
+}
+
 .header{
-    background-color: rgb(52, 143, 185);
+    background-color: rgb(4,5,5);
     display: block;
     position: fixed;
     top: 0;
     width: 100%;
     padding: 0.50%;
     text-align: center;
-    color: rgb(196, 199, 248);
+    color: rgb(255, 255, 255);
 }
 .main{
     align-content: center;
-    margin-top: 3.2%;
+    margin-top: 3.5%;
     margin-bottom: 2.2%;
     color: lawngreen;
     text-align: center;
@@ -46,9 +48,9 @@ body {
     width: 33%;
 }
 .footer{
-    background-color: rgb(52, 143, 185);
+    background-color: rgb(4, 5, 5);
     text-align: center;
-    color: rgb(196, 199, 248);
+    color: rgb(255, 255, 255);
     position: fixed;
     display: inline-block;
     bottom: 0;
@@ -56,5 +58,5 @@ body {
     padding: 0.5%;
 }
 body{
-    background-color: rgb(196, 199, 248);
+    background-color: rgb(241, 242, 255);
 }
