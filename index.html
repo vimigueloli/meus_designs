@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
 <head>
     <title>Victor Miguel</title>
     <link href="./estilo.css" rel="stylesheet">
@@ -14,10 +15,23 @@
                 <li class='foto'><img src="images/cidade.jpg" class = "imagem"></li> <li class='foto'><img src="images/cidade.jpg" class = "imagem"></li> <li class='foto'><img src="images/cidade.jpg" class = "imagem"></li>
             </ul>
             <nav>
-                <a href='extensão.html'> aqui </a>
+                <a href='extensão.html'> clique aqui </a>
             </nav>
             <section id='conteudo'></section>
         </div>
     </div>
     <footer id = 'roda_pe' class = 'footer'>tel: (11) 96498-6119                       email:vipeso2016@gmail.com</footer>
 </body>
+<script>
+    document.querySelectorAll('a').forEach(link =>{
+        link.onclick = function(e){
+            e.preventDefault()
+            console.log('ação')
+            const conteudo = document.getElementById('conteudo')
+            fetch(link.herf)
+                .then(resp => resp.text())
+                .then(html => conteudo.innerHTML = html)
+        }
+    })
+</script>
+</html>
