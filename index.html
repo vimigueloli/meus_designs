@@ -15,20 +15,22 @@
                 <li class='foto'><img src="images/cidade.jpg" class = "imagem"></li> <li class='foto'><img src="images/cidade.jpg" class = "imagem"></li> <li class='foto'><img src="images/cidade.jpg" class = "imagem"></li>
             </ul>
             <nav>
-                <a href='extensão.html'> clique aqui </a>
+                <a href="extensão.html"> aqui meu </a>
             </nav>
             <section id='conteudo'></section>
         </div>
     </div>
     <footer id = 'roda_pe' class = 'footer'>tel: (11) 96498-6119                       email:vipeso2016@gmail.com</footer>
 </body>
+
+
 <script>
     document.querySelectorAll('a').forEach(link =>{
+        const conteudo = document.getElementById('conteudo')
         link.onclick = function(e){
             e.preventDefault()
             console.log('ação')
-            const conteudo = document.getElementById('conteudo')
-            fetch(link.herf)
+            fetch(link.href)
                 .then(resp => resp.text())
                 .then(html => conteudo.innerHTML = html)
         }
